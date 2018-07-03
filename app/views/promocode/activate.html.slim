@@ -1,0 +1,10 @@
+h1 Promocode#activate
+p Find me in app/views/promocode/activate.html.erb
+
+= form_for @promocode, url: { action: :activation } do |f|
+  = f.label :code
+  = f.text_field :code
+
+  = f.submit "Activate!"
+
+= link_to "list of promocodes", '/promocodes'
